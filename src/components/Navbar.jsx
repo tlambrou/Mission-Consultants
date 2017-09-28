@@ -5,33 +5,23 @@ import '../pk2-pro-html-v2/assets/css/paper-kit.css'
 export class Navbar extends React.Component {
   render() {
     return (
-      <nav className="navbar navbar-toggleable-md navbar-default">
-        <button className="navbar-toggler navbar-toggler-right" type="button" dataToggle="collapse" dataTarget="#navbarNavDropdown" ariaControls="navbarNavDropdown" ariaExpanded="false" ariaLabel="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <a className="navbar-brand" href="#">Navbar</a>
-        <div className="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul className="navbar-nav">
-            <li className="nav-item active">
-              <a className="nav-link" href="#">Work in progress... <span className="sr-only">(current)</span></a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Link</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Link</a>
-            </li>
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" dataToggle="dropdown" ariaHaspopup="true" ariaExpanded="false">
-                Dropdown link
-              </a>
-              <div className="dropdown-menu" ariaLabelledby="navbarDropdownMenuLink">
-                <a className="dropdown-item" href="#">Action</a>
-                <a className="dropdown-item" href="#">Another action</a>
-                <a className="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-          </ul>
+      <nav className="navbar navbar-toggleable-md navbar-transparent navbar-absolute">
+        <div className="container">
+          <button className="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-bar"></span>
+            <span className="navbar-toggler-bar"></span>
+            <span className="navbar-toggler-bar"></span>
+          </button>
+          <a className="navbar-brand mb-0" href="www.creative-tim.com">Creative Tim</a>
+
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav ml-auto">
+              <a href="#paper-kit" className="btn btn-link btn-neutral">Components</a>
+              <a href="#paper-kit" className="btn btn-link btn-neutral">Tutorial</a>
+              <a href="#paper-kit" target="_blank" className="btn btn-link btn-neutral"><i className="fa fa-twitter"></i></a>
+              <a href="#paper-kit" target="_blank" className="btn btn-link btn-neutral"><i className="fa fa-facebook"></i></a>
+            </ul>
+          </div>
         </div>
       </nav>
     )
