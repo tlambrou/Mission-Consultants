@@ -11,6 +11,8 @@
  * ========================================================= */
 /*      light colors - used for select dropdown         */
 /*           Font Smoothing      */
+
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td-name, td, button, input, select, textarea {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -7481,7 +7483,7 @@ video {
 
 */
 /*
-	
+
 	1. Buttons
 
  */
@@ -7756,7 +7758,7 @@ a.pswp__share--download:hover {
 }
 
 /*
-	
+
 	4. Caption
 
  */
@@ -7846,8 +7848,8 @@ a.pswp__share--download:hover {
   margin: 0;
 }
 .pswp--css_animation .pswp__preloader__cut {
-  /* 
-  	The idea of animating inner circle is based on Polymer ("material") loading indicator 
+  /*
+  	The idea of animating inner circle is based on Polymer ("material") loading indicator
   	 by Keanu Lee https://blog.keanulee.com/2014/10/20/the-tale-of-three-spinners.html
   */
   position: relative;
@@ -7899,7 +7901,7 @@ a.pswp__share--download:hover {
   }
 }
 /*
-	
+
 	6. Additional styles
 
  */
