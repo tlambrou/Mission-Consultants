@@ -4,7 +4,9 @@ import Sunset from '../pk2-pro-html-v2/assets/img/sections/bruno-abatti.jpg'
 import Background from '../pk2-pro-html-v2/assets/img/sections/mika-matin.jpg'
 import Homes from '../pk2-pro-html-v2/assets/img/sections/fabio-mangione.jpg'
 
-const background = {
+import { * } from '../images/'
+
+export const background = {
   backgroundImage: `url( ${ Background } )`
 }
 
@@ -16,7 +18,6 @@ const homes = {
   backgroundImage: `url( ${ Homes } )`
 }
 
-
 export class Header extends React.Component {
   render() {
     return (
@@ -26,8 +27,8 @@ export class Header extends React.Component {
           <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
             <ol className="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" className=""></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1" className="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2" className=""></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1" className=""></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2" className="active"></li>
             </ol>
             <div className="carousel-inner" role="listbox">
               <div className="carousel-item">

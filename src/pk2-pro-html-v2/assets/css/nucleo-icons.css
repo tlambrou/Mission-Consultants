@@ -11,6 +11,14 @@ License - nucleoapp.com/license/
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'mission-cons';
+  src: url('../fonts/mission-cons.eot');
+  src: url('../fonts/mission-cons.eot') format('embedded-opentype'), url('../fonts/mission-cons.woff2') format('woff2'), url('../fonts/mission-cons.woff') format('woff'), url('../fonts/mission-cons.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 /*------------------------
 	base class definition
 -------------------------*/
