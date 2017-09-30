@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import Navbar from './Navbar'
+import Results from './Results'
+
 import Sunset from '../pk2-pro-html-v2/assets/img/sections/bruno-abatti.jpg'
 import Background from '../pk2-pro-html-v2/assets/img/sections/mika-matin.jpg'
 import Homes from '../pk2-pro-html-v2/assets/img/sections/fabio-mangione.jpg'
@@ -33,6 +35,9 @@ export class Search extends React.Component {
                       </div>
                     </form>
                   </div>
+                </div>
+                <div className="row">
+                  <Results />
                 </div>
               </div>
             </div>
