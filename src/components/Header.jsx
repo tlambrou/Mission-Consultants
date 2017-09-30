@@ -4,8 +4,6 @@ import Sunset from '../pk2-pro-html-v2/assets/img/sections/bruno-abatti.jpg'
 import Background from '../pk2-pro-html-v2/assets/img/sections/mika-matin.jpg'
 import Homes from '../pk2-pro-html-v2/assets/img/sections/fabio-mangione.jpg'
 
-import { * } from '../images/'
-
 export const background = {
   backgroundImage: `url( ${ Background } )`
 }
