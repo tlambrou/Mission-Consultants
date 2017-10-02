@@ -19,13 +19,25 @@ const homes = {
 export class Results extends React.Component {
   constructor(props){
     super(props)
-    this.state = {
-      search: ""
-    }
+
   }
 
-  displayResults(event) {
-    
+  drawResult(result) {
+    return (
+      <li>{result.firstName} {result.lastName}</li>
+    )
+  }
+
+  renderResults() {
+    console.log("This is the props", this.props.results)
+    var results = this.props.results
+    var newResults = <li>No new results!</li>
+    if (results) {
+       newResults = results.map((n) =>{
+        return this.drawResult(n)
+      })
+    }
+    return newResults
   }
 
   render() {
@@ -33,7 +45,9 @@ export class Results extends React.Component {
       <div className="wrapper">
         <div className="col-md-6 col-xs-2" >
           <h4>Results</h4>
-          {}
+          <ul>
+            {this.renderResults()}
+          </ul>
         </div>
       </div>
     )
