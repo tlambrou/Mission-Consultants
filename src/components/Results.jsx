@@ -16,15 +16,37 @@ const homes = {
   backgroundImage: `url( ${ Homes } )`
 }
 
-export class Results extends React.Component {
-  constructor(props){
-    super(props)
-
-  }
+export class Results extends Component {
 
   drawResult(result) {
     return (
-      <li>{result.firstName} {result.lastName}</li>
+      <div key={result.firstName} className="col-md-4 col-sm-6">
+        <div className="card card-profile">
+          <div className="card-avatar border-white">
+            <a href="#avatar">
+              <img src={result.photoURL} alt="..." />
+            </a>
+          </div>
+          <div className="card-block">
+            <h4 className="card-title">{result.firstName} {result.lastName}</h4>
+            <h6 className="card-category">{result.title}</h6>
+            <p className="card-description">
+              {result.bio.substring(0, Math.min(60, result.bio.length))}...
+            </p>
+            <div className="card-footer text-center">
+              <a href="#paper-kit" className="btn btn-just-icon btn-outline-default">
+                <i className="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="#paper-kit" className="btn btn-just-icon btn-outline-default ">
+                <i className="fa fa-github-alt" aria-hidden="true"></i>
+              </a>
+              <a href="#paper-kit" className="btn btn-just-icon btn-outline-default">
+                <i className="fa fa-envelope" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
@@ -33,7 +55,7 @@ export class Results extends React.Component {
     var results = this.props.results
     var newResults = <li>No new results!</li>
     if (results) {
-       newResults = results.map((n) =>{
+      newResults = results.map((n) =>{
         return this.drawResult(n)
       })
     }
@@ -42,13 +64,10 @@ export class Results extends React.Component {
 
   render() {
     return (
-      <div className="wrapper">
-        <div className="col-md-6 col-xs-2" >
-          <h4>Results</h4>
-          <ul>
-            {this.renderResults()}
-          </ul>
-        </div>
+      <div className="row">
+
+        {this.renderResults()}
+
       </div>
     )
   }

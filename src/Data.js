@@ -41,7 +41,7 @@ export var data = {
           "Conflict resolution and non-violent communication"
         ]
       },
-      photoURL: "/img/contractors/tassos.jpg"
+      photoURL: "/img/profiles/tassos.jpg"
     },
     {
       firstName: "Fiona",
@@ -77,7 +77,7 @@ export var data = {
           "Conflict resolution and non-violent communication"
         ]
       },
-      photoURL: "/img/contractors/fiona.jpg"
+      photoURL: "/img/profiles/fiona.jpg"
     },
     {
       firstName: "Michael",
@@ -117,11 +117,11 @@ export var data = {
           "Conflict resolution"
         ]
       },
-      photoURL: "/img/contractors/michael.jpg"
+      photoURL: "/img/profiles/michael.jpg"
     },
     {
       firstName: "Corey",
-      lastName: "Loubier",
+      lastName: "Harrilal",
       title: "Full-Stack Web, iOS Engineer, and Web Designer",
       bio: "I'm currently a full stack web developer at Make School in San Francisco with a deep passion for education technology.",
       tech: {
@@ -157,7 +157,7 @@ export var data = {
           "Conflict resolution"
         ]
       },
-      photoURL: "/img/contractors/michael.jpg"
+      photoURL: "/img/profiles/corey.jpg"
     },
   ]
 }

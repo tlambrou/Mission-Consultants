@@ -20,7 +20,8 @@ const homes = {
   backgroundImage: `url( ${ Homes } )`
 }
 
-export class Search extends React.Component {
+export class Search extends Component {
+
   constructor(props) {
     super(props)
     this.state = {
@@ -29,18 +30,30 @@ export class Search extends React.Component {
   }
 
   runSearch(text) {
-    if (text == "") {
+    if (text === "") {
       return data.contractors
     } else {
       var options = {
-        keys: ['firstName', 'lastName', 'title', 'tech.languages', 'tech.frameworks', 'tech.toolsAndLibraries', 'tech.databasesAndORMs', 'tech.other', 'skills.technical', 'skills.nonTechnical'],
+        keys: [
+          'firstName',
+          'lastName',
+          'title',
+          'tech.languages',
+          'tech.frameworks',
+          'tech.toolsAndLibraries',
+          'tech.databasesAndORMs',
+          'tech.other',
+          'skills.technical',
+          'skills.nonTechnical'
+        ],
         shouldSort: true,
-        includeMatches: false,
+        tokenize: true,
+        findAllMatches: false,
         threshold: 0,
         location: 0,
         distance: 100,
         maxPatternLength: 32,
-        minMatchCharLength: 2
+        minMatchCharLength: 1,
       }
       var fuse = new Fuse(data.contractors, options)
       var result = fuse.search(text)
@@ -78,7 +91,7 @@ export class Search extends React.Component {
                     </form>
                   </div>
                 </div>
-                <div className="row">
+                <div className="container">
                   <Results results={ this.runSearch(this.state.search) } />
                 </div>
               </div>
