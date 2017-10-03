@@ -4,7 +4,7 @@ export var data = {
       firstName: "Tassos",
       lastName: "Lambrou",
       title: "Full-Stack Web, iOS Engineer, and Web Designer",
-      bio: "Tassos is a passionate and charismatic full stack web and iOS software engineer with a penchant for solving problems by creating robust and impactful tech.  He was the founder and lead frontend developer for pullPixel Media and serviced clients needing frontend web development and design for 4+ years.",
+      bio: "I am a passionate and charismatic full stack web and iOS software engineer with a penchant for solving problems by creating robust and impactful tech.  I was the founder and lead frontend developer for pullPixel Media and serviced clients needing web development and design for over 6 years.",
       tech: {
         languages: [ "Python", "Javascript", "Swift", "Ruby", "R", "C++", "PHP", "HTML5", "CSS3", "Sass" ],
         frameworks: [ "Node.js", "Express.js", "UIKit", "Ruby on Rails", "Flask", "Vapor", "React", "React Native", "SpriteKit", "Ionic", "Joomla"],

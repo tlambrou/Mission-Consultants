@@ -1,27 +1,13 @@
 import React, { Component } from 'react'
-import Navbar from './Navbar'
-import Sunset from '../pk2-pro-html-v2/assets/img/sections/bruno-abatti.jpg'
-import Background from '../pk2-pro-html-v2/assets/img/sections/mika-matin.jpg'
-import Homes from '../pk2-pro-html-v2/assets/img/sections/fabio-mangione.jpg'
 
 var Link = require('react-router-dom').Link
 var NavLink = require('react-router-dom').NavLink
 
-export const background = {
-  backgroundImage: `url( ${ Background } )`
-}
+export class Profile extends Component {
 
-const sunset = {
-  backgroundImage: `url( ${ Sunset } )`
-}
+  render() {
+    const result = this.props.result
 
-const homes = {
-  backgroundImage: `url( ${ Homes } )`
-}
-
-export class Results extends Component {
-
-  drawResult(result) {
     return (
       <div key={result.firstName} className="col-md-4 col-sm-6">
         <div className="card card-profile">
@@ -52,28 +38,6 @@ export class Results extends Component {
       </div>
     )
   }
-
-  renderResults() {
-    console.log("This is the props", this.props.results)
-    var results = this.props.results
-    var newResults = <li>No new results!</li>
-    if (results) {
-      newResults = results.map((n) =>{
-        return this.drawResult(n)
-      })
-    }
-    return newResults
-  }
-
-  render() {
-    return (
-      <div className="row">
-
-        {this.renderResults()}
-
-      </div>
-    )
-  }
 }
 
-export default Results
+export default Profile

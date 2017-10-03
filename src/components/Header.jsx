@@ -1,19 +1,9 @@
 import React, { Component } from 'react'
 import Navbar from './Navbar'
-import Sunset from '../pk2-pro-html-v2/assets/img/sections/bruno-abatti.jpg'
 import Background from '../pk2-pro-html-v2/assets/img/farid-askerov.jpg'
-import Homes from '../pk2-pro-html-v2/assets/img/sections/fabio-mangione.jpg'
 
 export const background = {
   backgroundImage: `url( ${ Background } )`
-}
-
-const sunset = {
-  backgroundImage: `url( ${ Sunset } )`
-}
-
-const homes = {
-  backgroundImage: `url( ${ Homes } )`
 }
 
 export class Header extends Component {
@@ -23,7 +13,7 @@ export class Header extends Component {
         <Navbar />
         <div className="page-header" style={ background }>
           <div className="filter">
-            
+
           </div>
           <div className="content-center">
             <div className="container">
