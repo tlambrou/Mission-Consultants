@@ -1,23 +1,6 @@
 import React, { Component } from 'react'
-import Navbar from './Navbar'
-import Sunset from '../pk2-pro-html-v2/assets/img/sections/bruno-abatti.jpg'
-import Background from '../pk2-pro-html-v2/assets/img/sections/mika-matin.jpg'
-import Homes from '../pk2-pro-html-v2/assets/img/sections/fabio-mangione.jpg'
 
 var Link = require('react-router-dom').Link
-var NavLink = require('react-router-dom').NavLink
-
-export const background = {
-  backgroundImage: `url( ${ Background } )`
-}
-
-const sunset = {
-  backgroundImage: `url( ${ Sunset } )`
-}
-
-const homes = {
-  backgroundImage: `url( ${ Homes } )`
-}
 
 export class Results extends Component {
 
@@ -26,9 +9,9 @@ export class Results extends Component {
       <div key={result.firstName} className="col-md-4 col-sm-6">
         <div className="card card-profile">
           <div className="card-avatar border-white">
-            <a href="#avatar">
+            <Link to={`/${result.firstName.toLowerCase()}`}>
               <img src={result.photoURL} alt="..." />
-            </a>
+            </Link>
           </div>
           <div className="card-block">
             <h4 className="card-title">{result.firstName} {result.lastName}</h4>
@@ -54,7 +37,6 @@ export class Results extends Component {
   }
 
   renderResults() {
-    console.log("This is the props", this.props.results)
     var results = this.props.results
     var newResults = <li>No new results!</li>
     if (results) {
