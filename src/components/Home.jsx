@@ -6,6 +6,7 @@ import '../pk2-pro-html-v2/assets/css/nucleo-icons.css'
 import Header from './Header'
 import Services from './Services'
 import Search from './Search'
+import Footer from './Footer'
 
 export class Profile extends Component {
 
@@ -17,6 +18,7 @@ export class Profile extends Component {
         <Header />
         <Services />
         <Search />
+        <Footer />
       </div>
     )
   }
