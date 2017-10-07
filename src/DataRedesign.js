@@ -31,8 +31,136 @@ export var data = {
       sass: {
         name: "SASS"
       }
+    },
+    frameworks: {
+      node: {
+        name: "Node.js"
+      },
+      express: {
+        name: "Express.js"
+      },
+      uikit: {
+        name: "UIKit"
+      },
+      ror: {
+        name: "Ruby on Rails"
+      },
+      flask: {
+        name: "Flask"
+      },
+      vapor: {
+        name: "Vapor"
+      },
+      elixir: {
+        name: "Elixir"
+      },
+      react: {
+        name: "React"
+      },
+      reactnative: {
+        name: "React Native"
+      },
+      spritekit: {
+        name: "SpriteKit"
+      },
+      ionic: {
+        name: "Ionic"
+      },
+      angular: {
+        name: "Angular.js"
+      },
+      angular2: {
+        name: "Angular 2"
+      },
+      scenekit {
+        name: "SceneKit"
+      }
+    },
+    toolsAndLibraries: {
+      jquery: {
+        name: "jQuery"
+      },
+      chartsjs: {
+        name: "Charts.js"
+      },
+      reactrouter: {
+        name: "React Router"
+      },
+      mapkit: {
+        name: "MapKit"
+      },
+      bootstrap: {
+        name: "Bootstrap"
+      },
+      materialize: {
+        name: "Materialize CSS"
+      },
+      skeleton: {
+        name: "Skeleton"
+      },
+      mixpanel: {
+        name: "Mixpanel"
+      },
+      gamecenter: {
+        name: "Game Center"
+      }
+    },
+    databasesAndORMs: {
+      postgresql: {
+        name: "PostgreSQL"
+      },
+      mongodb: {
+        name: "MongoDB"
+      },
+      sqlite: {
+        name: "SQLite"
+      },
+      activerecord: {
+        name: "Active Record"
+      },
+      mongoose: {
+        name: "Mongoose"
+      },
+      fluent: {
+        name: "Fluent"
+      }
+    },
+    other: {
+      git: {
+        name: "Git"
+      },
+      github: {
+        name: "Github"
+      },
+      bash: {
+        name: "bash"
+      },
+      regex: {
+        name: "RegEx"
+      },
+      scrum: {
+        name: "Scrum"
+      },
+      tdd: {
+        name: "TDD"
+      },
+      xcodeprofiler: {
+        name: "Xcode Profiler"
+      },
+      heroku: {
+        name: "Heroku"
+      },
+      photoshop: {
+        name: "Photoshop"
+      },
+      illustrator: {
+        name: "Illustrator"
+      },
+      sketch: {
+        name: "Sketch"
+      }
     }
-  },
+  }
   contractors: [
     {
       firstName: "Tassos",
@@ -42,29 +170,88 @@ export var data = {
       tech: {
         languages: [
           {
-            ref: Data.tech.languages.python,
+            ref: this.tech.languages.python,
             level: 78
           },
           {
-            ref: Data.tech.languages.javascript,
+            ref: this.tech.languages.javascript,
             level: 86
           },
           {
-            ref: Data.tech.languages.swift,
+            ref: this.tech.languages.swift,
             level: 81
           },
           {
-            ref: Data.tech.languages.ruby,
+            ref: this.tech.languages.ruby,
             level: 69
           },
           {
-            ref: Data.tech.languages.r,
+            ref: this.tech.languages.r,
             level: 31
           },
           {
-            ref: Data.tech.languages
-          }"C++", "PHP", "HTML5", "CSS3", "Sass" ],
-        frameworks: [ "Node.js", "Express.js", "UIKit", "Ruby on Rails", "Flask", "Vapor", "React", "React Native", "SpriteKit", "Ionic", "Joomla"],
+            ref: this.tech.languages.cplusplus,
+            level: 28
+          },
+          {
+            ref: this.tech.languages.php,
+            level: 33
+          },
+          {
+            ref: this.tech.languages.html,
+            level: 89
+          },
+          {
+            ref: this.tech.languages.css,
+            level: 86
+          },
+          {
+            ref: this.tech.languages.sass,
+            level: 83
+          }
+        ],
+        frameworks: [
+          {
+            ref: this.tech.frameworks.node,
+            level: 87
+          },
+          {
+            ref: this.tech.frameworks.express,
+            level: 89
+          },
+          {
+            ref: this.tech.frameworks.uikit,
+            level: 79
+          },
+          {
+            ref: this.tech.frameworks.ror,
+            level: 69
+          },
+          {
+            ref: this.tech.frameworks.flask,
+            level: 37
+          },
+          {
+            ref: this.tech.frameworks.vapor,
+            level: 72
+          },
+          {
+            ref: this.tech.frameworks.react,
+            level: 88
+          },
+          {
+            ref: this.tech.frameworks.reactnative,
+            level: 83
+          },
+          {
+            ref: this.tech.frameworks.spritekit,
+            level: 86
+          },
+          {
+            ref: this.tech.frameworks.ionic,
+            level: 48
+          }
+        ],
         toolsAndLibraries: [ "jQuery", "React Router", "Charts.js", "MapKit", "Bootstrap", "Materialize CSS", "Skeleton", "Mixpanel", "Game Center"],
         databasesAndORMs: [ "PostgreSQL", "MongoDB", "SQLite 3", "Active Record", "Mongoose", "Fluent" ],
         other: [ "git", "github", "bash", "RegEx", "Scrum", "TDD", "Xcode Profiler", "Heroku", "Photoshop", "Illustrator", "Sketch" ]
