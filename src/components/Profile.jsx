@@ -4,12 +4,7 @@ import '../pk2-pro-html-v2/assets/css/paper-kit.css'
 import '../pk2-pro-html-v2/assets/css/bootstrap.min.css'
 import '../pk2-pro-html-v2/assets/css/nucleo-icons.css'
 import '../App.css'
-import Background from '../pk2-pro-html-v2/assets/img/farid-askerov.jpg'
 import Navbar from './Navbar'
-
-const background = {
-  backgroundImage: `url( ${ Background } )`
-}
 
 export class Profile extends Component {
 

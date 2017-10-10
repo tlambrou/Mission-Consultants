@@ -82,7 +82,7 @@ export var data = {
     {
       firstName: "Michael",
       lastName: "Loubier",
-      title: "Full-Stack Web, iOS Engineer, and Web Designer",
+      title: "VR Developer and Game Developer",
       bio: "I am an entrepreneur and technical specialist turned software developer that enjoys learning new skills, and working with new frameworks and technologies. Over the past 9 years, I’ve run my own businesses, worked for a startup in the smart home sphere, run a team of sales and support specialists, and worked full-time in hardware and software technical support and sales. I have a knack for solving problems and dealing with conflict that I'm not afraid to employ. I love to be involved with every step of the process of bringing new ideas to life, from validation, to design, to development, to growth and marketing, and beyond.",
       tech: {
         languages: [ "Python", "Javascript", "Swift", "Ruby", "R", "C++", "PHP", "HTML5", "CSS3", "Sass" ],
