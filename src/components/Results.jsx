@@ -8,12 +8,12 @@ export class Results extends Component {
     return (
       <div key={result.firstName} className="col-md-4 col-sm-6">
         <div className="card card-profile">
-          <div className="card-avatar border-white">
-            <Link to={`/${result.firstName.toLowerCase()}`}>
-              <img src={result.photoURL} alt="..." />
-            </Link>
-          </div>
           <div className="card-block">
+            <div className="card-avatar">
+              <Link to={`/${result.firstName.toLowerCase()}`}>
+                <img src={result.photoURL} alt="..." />
+              </Link>
+            </div>
             <h4 className="card-title">{result.firstName} {result.lastName}</h4>
             <h6 className="card-category">{result.title}</h6>
             <p className="card-description">
