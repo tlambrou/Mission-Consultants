@@ -252,9 +252,93 @@ export var data = {
             level: 48
           }
         ],
-        toolsAndLibraries: [ "jQuery", "React Router", "Charts.js", "MapKit", "Bootstrap", "Materialize CSS", "Skeleton", "Mixpanel", "Game Center"],
-        databasesAndORMs: [ "PostgreSQL", "MongoDB", "SQLite 3", "Active Record", "Mongoose", "Fluent" ],
-        other: [ "git", "github", "bash", "RegEx", "Scrum", "TDD", "Xcode Profiler", "Heroku", "Photoshop", "Illustrator", "Sketch" ]
+        toolsAndLibraries: [
+          {
+            ref: this.tech.toolsAndLibraries.jquery,
+            level: 82
+          }, {
+            ref: this.tech.toolsAndLibraries.reactrouter,
+            level: 64
+          }, {
+            ref: this.tech.toolsAndLibraries.chartsjs,
+            level: 42
+          }, {
+            ref: this.tech.toolsAndLibraries.mapkit,
+            level: 86
+          }, {
+            ref: this.tech.toolsAndLibraries.bootstrap,
+            level: 84
+          }, {
+            ref: this.tech.toolsAndLibraries.materialize,
+            level: 82
+          }, {
+            ref: this.tech.toolsAndLibraries.skeleton,
+            level: 67
+          }, {
+            ref: this.tech.toolsAndLibraries.mixpanel,
+            level: 38
+          }, {
+            ref: this.tech.toolsAndLibraries.gamecenter,
+            level: 79
+          }
+        ],
+        databasesAndORMs: [
+          {
+            ref: this.tech.databasesAndORMs.postgresql,
+            level: 61
+          }, {
+            ref: this.tech.databasesAndORMs.mongodb,
+            level: 67
+          }, {
+            ref: this.tech.databasesAndORMs.sqlite,
+            level: 41
+          }, {
+            ref: this.tech.databasesAndORMs.activerecord,
+            level: 69
+          }, {
+            ref: this.tech.databasesAndORMs.mongoose,
+            level: 71
+          }, {
+            ref: this.tech.databasesAndORMs.fluent,
+            level: 68
+          }
+        ],
+        other: [
+          {
+            ref: this.tech.other.git,
+            level: 80
+          }, {
+            ref: this.tech.other.github,
+            level: 89
+          }, {
+            ref: this.tech.other.bash,
+            level: 67
+          }, {
+            ref: this.tech.other.regex,
+            level: 51
+          }, {
+            ref: this.tech.other.scrum,
+            level: 60
+          }, {
+            ref: this.tech.other.tdd,
+            level: 64
+          }, {
+            ref: this.tech.other.xcodeprofiler,
+            level: 25
+          }, {
+            ref: this.tech.other.heroku,
+            level: 61
+          }, {
+            ref: this.tech.other.photoshop,
+            level: 91
+          }, {
+            ref: this.tech.other.illustrator,
+            level: 48
+          }, {
+            ref: this.tech.other.sketch,
+            level: 79
+          }
+        ]
       },
       skills: {
         technical: [
