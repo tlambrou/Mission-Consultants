@@ -23,7 +23,7 @@ export const background4 = {
 export class Services extends Component {
   render() {
     return (
-      <div>
+      <div id="services">
         <div className="wrapper">
           <section className="services">
             <div className="features-2">

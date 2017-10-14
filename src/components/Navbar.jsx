@@ -18,8 +18,8 @@ export class Navbar extends Component {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
-            <a href="#paper-kit" className="btn btn-link btn-neutral">Services</a>
-            <a href="#paper-kit" className="btn btn-link btn-neutral">Contractors</a>
+            <a href="#services" className="btn btn-link btn-neutral">Services</a>
+            <a href="#search" className="btn btn-link btn-neutral">Contractors</a>
             <a href="#paper-kit" className="btn btn-link btn-neutral">Contact Us</a>
             <a href="#paper-kit" target="_blank" className="btn btn-link btn-neutral"><i className="fa fa-twitter"></i></a>
             <a href="#paper-kit" target="_blank" className="btn btn-link btn-neutral"><i className="fa fa-facebook"></i></a>

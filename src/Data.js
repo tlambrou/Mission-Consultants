@@ -122,7 +122,7 @@ export var data = {
     {
       firstName: "Corey",
       lastName: "Harrilal",
-      title: "Full-Stack Web, iOS Engineer, and Web Designer",
+      title: "Full-Stack Web Developer",
       bio: "I'm currently a full stack web developer at Make School in San Francisco with a deep passion for education technology.",
       tech: {
         languages: [ "Python", "Javascript", "Swift", "Ruby", "R", "C++", "PHP", "HTML5", "CSS3", "Sass" ],

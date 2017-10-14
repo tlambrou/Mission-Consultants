@@ -19,7 +19,17 @@ export class Search extends Component {
 
   runSearch(text) {
     if (text === "") {
-      return data.contractors
+      return data.contractors.sort((first, second) => {
+        const nameFirst = first.lastName + first.firstName
+        const nameSecond = second.lastName + second.firstName
+        if (nameFirst == nameSecond) {
+          return 0
+        } else if (nameFirst > nameSecond) {
+          return 1
+        } else if (nameFirst < nameSecond) {
+          return -1
+        }
+      })
     } else {
       var options = {
         keys: [
@@ -61,6 +71,7 @@ export class Search extends Component {
   }
 
   render() {
+
     return (
       <section className="search" id="search">
         <div className="wrapper">
