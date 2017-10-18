@@ -7,6 +7,7 @@ var ConsultantSchema = new Schema({
 
   , firstName           : { type: String, required: true }
   , lastName            : { type: String, required: true }
+  , email               : { type: String, required: true }
   , title               : { type: String, required: true }
   , bio                 : { type: String, required: true }
   , linkedIn            : { type: String }
@@ -16,7 +17,7 @@ var ConsultantSchema = new Schema({
 
 })
 
-PostSchema.pre('save', function(next){
+ConsultantSchema.pre('save', function(next){
   // SET createdAt AND updatedAt
   var now = new Date()
   this.updatedAt = now
