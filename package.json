@@ -3,9 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
     "bootstrap": "^4.0.0-beta",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
     "fuse.js": "^3.1.0",
     "jquery": "^3.2.1",
+    "mongoose": "^4.12.3",
     "popper.js": "^1.12.5",
     "react": "^15.6.2",
     "react-bootstrap": "^0.31.3",
@@ -22,8 +27,8 @@
     "eject": "react-scripts eject"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
-  "main": "index.js",
+  "main": "server.js",
   "devDependencies": {},
-  "author": "",
+  "author": "Tassos Lambrou",
   "license": "ISC"
 }
