@@ -21,7 +21,7 @@ export class Results extends Component {
             </p>
             <div className="card-footer text-center">
               <a href="#paper-kit" className="btn btn-just-icon btn-outline-default">
-                <i className="fa fa-twitter" aria-hidden="true"></i>
+                <i className="fa fa-globe" aria-hidden="true"></i>
               </a>
               <a href="#paper-kit" className="btn btn-just-icon btn-outline-default ">
                 <i className="fa fa-github-alt" aria-hidden="true"></i>

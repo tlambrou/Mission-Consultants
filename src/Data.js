@@ -123,7 +123,7 @@ export var data = {
       firstName: "Corey",
       lastName: "Harrilal",
       title: "Full-Stack Web Developer",
-      bio: "I'm currently a full stack web developer at Make School in San Francisco with a deep passion for education technology.",
+      bio: "I'm currently a full stack web developer at Make School in San Francisco with a deep passion for education technology. At Make School, I built Make Mentor (Ruby on Rails) that allows undergraduates to easily connect and meet with alumni at their colleges. Students can discover and connect with mentors more easily than ever before. Before Make School, I co-founded Teptu, a not-for-profit that provides high schoolers that are passionate in STEM research opportunities to build entrepreneurial skills. I led a team (~ 12 people ) to organize a science competition where more than 300 NYC high schoolers applied. Teptu is sponsored by companies such as Microsoft and WeWork. My previous education included chemical engineering at MIT. I bring a diverse set of software development, product development and science research skills to any technical position. I have experience with Ruby on Rails, Express.js, Node.js, MongoDB, HTML, CSS, Javascript, and iOS development.",
       tech: {
         languages: [ "Python", "Javascript", "Swift", "Ruby", "R", "C++", "PHP", "HTML5", "CSS3", "Sass" ],
         frameworks: [ "Node.js", "Express.js", "UIKit", "Ruby on Rails", "Flask", "Vapor", "React", "React Native", "SpriteKit", "Ionic", "Joomla"],

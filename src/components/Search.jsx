@@ -86,11 +86,10 @@ export class Search extends Component {
                         }} role="search" className="form-inline search-form">
                         <div className="input-group no-border">
                           <span className="input-group-addon addon-xtreme no-border" id="basic-addon1"><i className="fa fa-search"></i></span>
-                          <input type="text" onChange={this.changeSearch.bind(this)} className="form-control input-xtreme no-border" placeholder="Find a Pro" aria-describedby="basic-addon1" />
+                        <input type="text" onChange={this.changeSearch.bind(this)} className="form-control input-xtreme no-border" placeholder="Find a Pro" aria-describedby="basic-addon1"/>
                         </div>
                       </form>
                     </div>
-
                   </div>
                 </div>
                 <div className="container">

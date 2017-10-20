@@ -1,3 +1,11 @@
 .mc-search {
   max-height: 110px;
 }
+
+.btn-outline-default {
+  margin: 3px;
+}
+
+.label {
+  margin: 0 3px;
+}

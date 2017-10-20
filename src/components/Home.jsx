@@ -11,10 +11,8 @@ import Footer from './Footer'
 export class Profile extends Component {
 
   render() {
-
     return (
       <div>
-
         <Header />
         <Services />
         <Search />
