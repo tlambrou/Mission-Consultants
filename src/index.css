@@ -2,6 +2,10 @@
   max-height: 110px;
 }
 
+div.card.card-profile {
+  margin-top: 44px;
+}
+
 .btn-outline-default {
   margin: 3px;
 }
