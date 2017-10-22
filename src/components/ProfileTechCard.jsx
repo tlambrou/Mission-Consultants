@@ -33,7 +33,7 @@ export class ProfileTechCard extends Component {
       case 'Tools & Libraries':
         return "nc-icon nc-settings"
       case 'Databases & ORMs':
-        return "nc-icon nc-money-coins"
+        return "nc-icon nc-world-2"
       case 'Other':
         return "nc-icon nc-layout-11"
       default:
