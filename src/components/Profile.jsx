@@ -5,10 +5,7 @@ import '../pk2-pro-html-v2/assets/css/bootstrap.min.css'
 import '../pk2-pro-html-v2/assets/css/nucleo-icons.css'
 import '../App.css'
 import Navbar from './Navbar'
-import ProfileLanguages from './ProfileLanguages'
-import ProfileFrameworks from './ProfileFrameworks'
-import ProfileTools from './ProfileTools'
-
+import ProfileTechCard from './ProfileTechCard'
 
 export class Profile extends Component {
 
@@ -60,9 +57,11 @@ export class Profile extends Component {
 
               <div className="container">
                 <div className="row">
-                  <ProfileLanguages items={result.tech.languages}/>
-                  <ProfileFrameworks items={result.tech.frameworks} />
-                  <ProfileTools items={result.tech.toolsAndLibraries}/>
+                  <ProfileTechCard category="Languages" items={result.tech.languages} />
+                  <ProfileTechCard category="Frameworks" items={result.tech.frameworks} />
+                  <ProfileTechCard category="Tools & Libraries" items={result.tech.toolsAndLibraries} />
+                  <ProfileTechCard category="Databases & ORMs" items={result.tech.databasesAndORMs} />
+                  <ProfileTechCard category="Other" items={result.tech.other} />
                 </div>
               </div>
             </div>
