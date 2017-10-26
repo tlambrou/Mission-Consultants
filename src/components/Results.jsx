@@ -7,9 +7,8 @@ export class Results extends Component {
   drawResult(result) {
     const email = "mailto:" + result.email
     return (
-
-        <div key={result.firstName} className="col-md-4 col-sm-6">
-          <Link to={`/${result.firstName.toLowerCase()}`}>
+      <div key={result.firstName} className="col-md-4 col-sm-6">
+        <Link to={`/${result.firstName.toLowerCase()}`}>
           <div className="card card-profile">
             <div className="card-block">
               <div className="card-avatar">
@@ -36,10 +35,8 @@ export class Results extends Component {
               </div>
             </div>
           </div>
-          </Link>
-        </div>
-
-
+        </Link>
+      </div>
     )
   }
 
