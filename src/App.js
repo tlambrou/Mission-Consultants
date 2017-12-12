@@ -19,7 +19,6 @@ class App extends Component {
             var name = contractor.firstName.toLowerCase()
             return <Route key={name} path={`/:name`} component={Profile} />
           })}
-          console.dir(Reactstrap)
         </Switch>
       </Router>
     )
