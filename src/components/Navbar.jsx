@@ -14,7 +14,7 @@ export class Navbar extends Component {
           <span className="navbar-toggler-bar"></span>
           <span className="navbar-toggler-bar"></span>
         </button>
-        <a className="navbar-brand mb-0" href="www.creative-tim.com">Mission Consultants</a>
+        <a className="navbar-brand mb-0" href="/">Mission Consultants</a>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
