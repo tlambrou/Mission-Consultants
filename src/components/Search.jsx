@@ -65,6 +65,10 @@ export class Search extends Component {
 
   }
 
+  formSubmit(e) {
+    e.preventDefault()
+  }
+
   render() {
 
     return (
@@ -76,7 +80,9 @@ export class Search extends Component {
                 <div className="row">
                   <div className="col-md-6 offset-md-3 col-xs-12 text-center card card-raised card-form-horizontal no-transition mc-search">
                     <div className="card-block">
-                      <form onSubmit={(e) => { e.preventDefault() } role="search" className="form-inline search-form">
+                      <form onSubmit={(e) => {
+                          this.formSubmit(e)
+                        }} role="search" className="form-inline search-form">
                         <div className="input-group no-border">
                           <span className="input-group-addon addon-xtreme no-border" id="basic-addon1"><i className="fa fa-search"></i></span>
                         <input type="text" onChange={this.changeSearch.bind(this)} className="form-control input-xtreme no-border" placeholder="Find a Pro" aria-describedby="basic-addon1"/>
