@@ -7,7 +7,7 @@ import '../pk2-pro-html-v2/assets/css/paper-kit.css'
 export class Navbar extends Component {
   render() {
     return (
-      <nav className="navbar navbar-toggleable-md navbar-transparent navbar-absolute">
+      <nav className={(this.props.dark === true) ? `navbar navbar-toggleable-md navbar-transparent navbar-absolute` : `navbar navbar-toggleable-md`}>
       <div className="container">
         <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-bar"></span>
