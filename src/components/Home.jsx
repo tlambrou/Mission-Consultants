@@ -14,8 +14,8 @@ export class Home extends Component {
     return (
       <div>
         <Header />
-        <Search />
         <Services />
+        <Search />
         <Footer />
       </div>
     )

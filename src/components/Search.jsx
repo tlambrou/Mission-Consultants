@@ -22,7 +22,6 @@ export class Search extends Component {
         "Ansel-Bridgewater",
         "fernando-arocho",
         "michael_loubier",
-        "tassos",
         "Sky-Xu",
         "TJ-King"
       ],
@@ -104,52 +103,57 @@ export class Search extends Component {
       return <Results results={ this.runSearch(this.state.search) } />
     } else {
       return (
-        <a href="" className="btn btn-round">
-          <div className='uil-reload-css reload-small'>
-            <div>
-            </div>
-          </div>   Loading Contractors...</a>
-        )
-      }
-    }
-
-    render() {
-
-      return (
-        <section className="search" id="search">
-          {console.log(this.state.contractors)}
-          <div className="wrapper">
-            <div className="main">
-              <div className="section section-gray section-search">
-                <div className="container">
-                  <div className="row">
-                    <div className="col-md-6 offset-md-3 col-xs-12 text-center card card-raised card-form-horizontal no-transition mc-search">
-                      <div className="card-block">
-                        <form onSubmit={(e) => {this.formSubmit(e)}} role="search" className="form-inline search-form">
-                          <div className="input-group no-border">
-                            <span className="input-group-addon addon-xtreme no-border" id="basic-addon1"><i className="fa fa-search"></i></span>
-                            <input
-                              type="text"
-                              onChange={this.changeSearch.bind(this)}
-                              className="form-control input-xtreme no-border"
-                              placeholder="Find a Pro"
-                              aria-describedby="basic-addon1"
-                              />
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="container">
-                    {this.renderResults()}
-                  </div>
+        <div className="row align-items-center">
+          <div className="col-md-4 offset-md-4">
+            <a href="" className="btn btn-round">
+              <div className='uil-reload-css reload-small'>
+                <div>
                 </div>
-              </div>
-            </div>
+              </div>   Loading Contractors...
+            </a>
           </div>
-        </section>
+        </div>
       )
     }
   }
 
-  export default Search
+  render() {
+
+    return (
+      <section className="search" id="search">
+        {console.log(this.state.contractors)}
+        <div className="wrapper">
+          <div className="main">
+            <div className="section section-gray section-search">
+              <div className="container">
+                <div className="row">
+                  <div className="col-md-6 offset-md-3 col-xs-12 text-center card card-raised card-form-horizontal no-transition mc-search">
+                    <div className="card-block">
+                      <form onSubmit={(e) => {this.formSubmit(e)}} role="search" className="form-inline search-form">
+                        <div className="input-group no-border">
+                          <span className="input-group-addon addon-xtreme no-border" id="basic-addon1"><i className="fa fa-search"></i></span>
+                          <input
+                            type="text"
+                            onChange={this.changeSearch.bind(this)}
+                            className="form-control input-xtreme no-border"
+                            placeholder="Find a Pro"
+                            aria-describedby="basic-addon1"
+                            />
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div className="container">
+                  {this.renderResults()}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    )
+  }
+}
+
+export default Search
