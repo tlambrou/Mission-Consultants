@@ -15,9 +15,10 @@ class App extends Component {
       <Router>
         <Switch>
           <Route exact path='/' component={Home} />
+          <Route path={`/contractors/:slug`} component={Profile} />
           {Data.contractors.map((contractor) => {
             var name = contractor.firstName.toLowerCase()
-            return <Route key={name} path={`/:name`} component={Profile} />
+            return <Route key={name} path={`/contractors/:slug`} component={Profile} />
           })}
         </Switch>
       </Router>
