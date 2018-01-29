@@ -21,6 +21,205 @@ export const background4 = {
 }
 
 export class Services extends Component {
+
+  renderColoredCards() {
+    return (
+      <div className="row">
+        <div className="col-md-3">
+          <div className="card card-pricing" data-color="orange">
+            <div className="card-body">
+              <div className="card-icon">
+                <span className="icon-simple"><i className="nc-icon nc-basket"></i></span>
+              </div>
+              <h3 className="card-title">$199</h3>
+
+              <p className="card-description">
+                This is good if your company size is between 5 and 20 employees.
+              </p>
+              <div className="card-footer">
+                <a href="#pablo" className="btn btn-neutral btn-round">Choose Plan</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="col-md-3">
+          <div className="card card-pricing" data-color="green">
+            <div className="card-body">
+              <div className="card-icon">
+                <span className="icon-simple"><i className="nc-icon nc-watch-time"></i></span>
+              </div>
+              <h3 className="card-title">$249</h3>
+
+              <p className="card-description">
+                This is good if your company size is between 21 and 59 employees.
+              </p>
+              <div className="card-footer">
+                <a href="#pablo" className="btn btn-neutral btn-round">Choose Plan</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="col-md-3">
+          <div className="card card-pricing" data-color="blue">
+            <div className="card-body">
+              <div className="card-icon">
+                <span className="icon-simple"><i className="nc-icon nc-settings"></i></span>
+              </div>
+              <h3 className="card-title">$359</h3>
+
+              <p className="card-description">
+                This is good if your company size is between 60 and 159 employees.
+              </p>
+              <div className="card-footer">
+                <a href="#pablo" className="btn btn-neutral btn-round">Choose Plan</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="col-md-3">
+          <div className="card card-pricing" data-color="purple">
+            <div className="card-body">
+              <div className="card-icon">
+                <span className="icon-simple"><i className="nc-icon nc-istanbul"></i></span>
+              </div>
+              <h3 className="card-title">$599</h3>
+
+              <p className="card-description">
+                This is good if your company size is between 160 and 299 employees.
+              </p>
+              <div className="card-footer">
+                <a href="#pablo" className="btn btn-neutral btn-round">Choose Plan</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  renderImageCards() {
+    return (
+      <div className="row">
+        <div className="col-md-3">
+          <div className="card" data-background="image" style={background1}>
+            <div className="card-block">
+              <h6 className="card-category">iOS Development</h6>
+              <div className="card-icon">
+                <i className="nc-icon nc-mobile"></i>
+              </div>
+              <p className="card-description">
+              </p><dl className="row">
+              <dt className="col-sm-3">
+                <img alt="" className="icon icons8-Swift-Filled" width="25" height="25" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAABmUlEQVRIS72WjVHCQBCFv1eBUoF2oB0oFYgdSAViBUIFQgVSglSgdmAJ2AFUsM7L5PSAhIQf2ZlMmJvsfrfvdvcQJzDljIi4BR6B3gHsN2Ai6SPF+IVExAPwekDwdde+pKkXC0iZwfsRASlU1xkliFO8+wfITFIvQWIPwBI4a/BbSOocApkA18DNNpBs5Zlsy2RWI2Wxy4hwFdWCmiB27gAXwBMwrpCnC3yVj7/bsCaIHUbAJXAF9AGXpH8nG0kabqvONhAHc3Cb9R+WoFSJBaSU3BnlGyic2kIWgGXx207ziBgAL5ZRkmV0r/ntabFibSF2KkCSvNvCIsKZGVqsRYQzej4EUgnKA2bZtcpkDnzXlKUzus+HX5bZznK5ZC2Dh6Zl8YG6w702TYNvLRNP8I3513QmA0nu6tZW1ZhNEAd3Q3pkW8JKKwvAjfgJuOpWDr8NJAX2lPaTzssN6sCW0zKlwjBoZZrvAmkt2dqHS0nnJ71PKitj3+1nfn83Y9mx/3vHZw3ljFwh+17F7iVX5Ljy38oRpKkN8QM1fcIamDHgigAAAABJRU5ErkJggg=="/>
+
+              </dt>
+              <dd className="col-sm-9"><p className="text-left"><small>Lastest Swift 4.0 Design Patterns</small></p></dd>
+
+              <dt className="col-sm-3"><i className="nc-icon nc-tile-56"></i></dt>
+              <dd className="col-sm-9"><p className="text-left"><small>iOS Frameworks and Libraries</small></p></dd>
+
+            </dl>
+            <p></p>
+
+            <div className="card-footer">
+              <a href="#pablo" className="btn btn-link btn-neutral">
+                <i className="fa fa-book" aria-hidden="true"></i> Show more
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-3">
+          <div className="card" data-background="image" style={background2}>
+            <div className="card-block">
+              <h6 className="card-category">Frontend Web Development</h6>
+              <div className="card-icon">
+                <i className="nc-icon nc-compass-05"></i>
+              </div>
+              <p className="card-description">
+              </p><dl className="row">
+              <dt className="col-sm-3">
+                <img alt="" className="icon icons8-Swift-Filled" width="25" height="25" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAABmUlEQVRIS72WjVHCQBCFv1eBUoF2oB0oFYgdSAViBUIFQgVSglSgdmAJ2AFUsM7L5PSAhIQf2ZlMmJvsfrfvdvcQJzDljIi4BR6B3gHsN2Ai6SPF+IVExAPwekDwdde+pKkXC0iZwfsRASlU1xkliFO8+wfITFIvQWIPwBI4a/BbSOocApkA18DNNpBs5Zlsy2RWI2Wxy4hwFdWCmiB27gAXwBMwrpCnC3yVj7/bsCaIHUbAJXAF9AGXpH8nG0kabqvONhAHc3Cb9R+WoFSJBaSU3BnlGyic2kIWgGXx207ziBgAL5ZRkmV0r/ntabFibSF2KkCSvNvCIsKZGVqsRYQzej4EUgnKA2bZtcpkDnzXlKUzus+HX5bZznK5ZC2Dh6Zl8YG6w702TYNvLRNP8I3513QmA0nu6tZW1ZhNEAd3Q3pkW8JKKwvAjfgJuOpWDr8NJAX2lPaTzssN6sCW0zKlwjBoZZrvAmkt2dqHS0nnJ71PKitj3+1nfn83Y9mx/3vHZw3ljFwh+17F7iVX5Ljy38oRpKkN8QM1fcIamDHgigAAAABJRU5ErkJggg=="/>
+
+              </dt>
+              <dd className="col-sm-9"><p className="text-left"><small>Lastest Swift 4.0 Design Patterns</small></p></dd>
+
+              <dt className="col-sm-3"><i className="nc-icon nc-tile-56"></i></dt>
+              <dd className="col-sm-9"><p className="text-left"><small>iOS Frameworks and Libraries</small></p></dd>
+
+            </dl>
+            <p></p>
+            <div className="card-footer">
+              <a href="#pablo" className="btn btn-link btn-neutral">
+                <i className="fa fa-book" aria-hidden="true"></i> Show more
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-3">
+          <div className="card" data-background="image" style={background3}>
+            <div className="card-block">
+              <h6 className="card-category">Fullstack Web Development</h6>
+              <div className="card-icon">
+                <i className="nc-icon nc-world-2"></i>
+              </div>
+              <p className="card-description">
+              </p><dl className="row">
+              <dt className="col-sm-3">
+                <img alt="" className="icon icons8-Swift-Filled" width="25" height="25" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAABmUlEQVRIS72WjVHCQBCFv1eBUoF2oB0oFYgdSAViBUIFQgVSglSgdmAJ2AFUsM7L5PSAhIQf2ZlMmJvsfrfvdvcQJzDljIi4BR6B3gHsN2Ai6SPF+IVExAPwekDwdde+pKkXC0iZwfsRASlU1xkliFO8+wfITFIvQWIPwBI4a/BbSOocApkA18DNNpBs5Zlsy2RWI2Wxy4hwFdWCmiB27gAXwBMwrpCnC3yVj7/bsCaIHUbAJXAF9AGXpH8nG0kabqvONhAHc3Cb9R+WoFSJBaSU3BnlGyic2kIWgGXx207ziBgAL5ZRkmV0r/ntabFibSF2KkCSvNvCIsKZGVqsRYQzej4EUgnKA2bZtcpkDnzXlKUzus+HX5bZznK5ZC2Dh6Zl8YG6w702TYNvLRNP8I3513QmA0nu6tZW1ZhNEAd3Q3pkW8JKKwvAjfgJuOpWDr8NJAX2lPaTzssN6sCW0zKlwjBoZZrvAmkt2dqHS0nnJ71PKitj3+1nfn83Y9mx/3vHZw3ljFwh+17F7iVX5Ljy38oRpKkN8QM1fcIamDHgigAAAABJRU5ErkJggg=="/>
+
+              </dt>
+              <dd className="col-sm-9"><p className="text-left"><small>Lastest Swift 4.0 Design Patterns</small></p></dd>
+
+              <dt className="col-sm-3"><i className="nc-icon nc-tile-56"></i></dt>
+              <dd className="col-sm-9"><p className="text-left"><small>iOS Frameworks and Libraries</small></p></dd>
+
+            </dl>
+            <p></p>
+            <div className="card-footer">
+              <a href="#pablo" className="btn btn-link btn-neutral">
+                <i className="fa fa-book" aria-hidden="true"></i> Show more
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-3">
+          <div className="card" data-background="image" style={background4}>
+            <div className="card-block">
+              <h6 className="card-category">Design</h6>
+              <div className="card-icon">
+                <i className="nc-icon nc-diamond"></i>
+              </div>
+              <p className="card-description">
+              </p><dl className="row">
+              <dt className="col-sm-3">
+                <img alt="" className="icon icons8-Swift-Filled" width="25" height="25" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAABmUlEQVRIS72WjVHCQBCFv1eBUoF2oB0oFYgdSAViBUIFQgVSglSgdmAJ2AFUsM7L5PSAhIQf2ZlMmJvsfrfvdvcQJzDljIi4BR6B3gHsN2Ai6SPF+IVExAPwekDwdde+pKkXC0iZwfsRASlU1xkliFO8+wfITFIvQWIPwBI4a/BbSOocApkA18DNNpBs5Zlsy2RWI2Wxy4hwFdWCmiB27gAXwBMwrpCnC3yVj7/bsCaIHUbAJXAF9AGXpH8nG0kabqvONhAHc3Cb9R+WoFSJBaSU3BnlGyic2kIWgGXx207ziBgAL5ZRkmV0r/ntabFibSF2KkCSvNvCIsKZGVqsRYQzej4EUgnKA2bZtcpkDnzXlKUzus+HX5bZznK5ZC2Dh6Zl8YG6w702TYNvLRNP8I3513QmA0nu6tZW1ZhNEAd3Q3pkW8JKKwvAjfgJuOpWDr8NJAX2lPaTzssN6sCW0zKlwjBoZZrvAmkt2dqHS0nnJ71PKitj3+1nfn83Y9mx/3vHZw3ljFwh+17F7iVX5Ljy38oRpKkN8QM1fcIamDHgigAAAABJRU5ErkJggg=="/>
+
+              </dt>
+              <dd className="col-sm-9"><p className="text-left"><small>Lastest Swift 4.0 Design Patterns</small></p></dd>
+
+              <dt className="col-sm-3"><i className="nc-icon nc-tile-56"></i></dt>
+              <dd className="col-sm-9"><p className="text-left"><small>iOS Frameworks and Libraries</small></p></dd>
+
+            </dl>
+            <p></p>
+            <div className="card-footer">
+              <a href="#pablo" className="btn btn-link btn-neutral">
+                <i className="fa fa-book" aria-hidden="true"></i> Show more
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
   render() {
     return (
       <div id="services">
@@ -35,122 +234,7 @@ export class Services extends Component {
                     <br/>
                   </div>
                 </div>
-
-                <div className="row">
-                  <div className="col-md-3">
-                    <div className="card" data-background="image" style={background1}>
-                      <div className="card-block">
-                        <h6 className="card-category">iOS Development</h6>
-                        <div className="card-icon">
-                          <i className="nc-icon nc-mobile"></i>
-                        </div>
-                        <p className="card-description">
-                        </p><dl className="row">
-                        <dt className="col-sm-3">
-                          <img alt="" className="icon icons8-Swift-Filled" width="25" height="25" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAABmUlEQVRIS72WjVHCQBCFv1eBUoF2oB0oFYgdSAViBUIFQgVSglSgdmAJ2AFUsM7L5PSAhIQf2ZlMmJvsfrfvdvcQJzDljIi4BR6B3gHsN2Ai6SPF+IVExAPwekDwdde+pKkXC0iZwfsRASlU1xkliFO8+wfITFIvQWIPwBI4a/BbSOocApkA18DNNpBs5Zlsy2RWI2Wxy4hwFdWCmiB27gAXwBMwrpCnC3yVj7/bsCaIHUbAJXAF9AGXpH8nG0kabqvONhAHc3Cb9R+WoFSJBaSU3BnlGyic2kIWgGXx207ziBgAL5ZRkmV0r/ntabFibSF2KkCSvNvCIsKZGVqsRYQzej4EUgnKA2bZtcpkDnzXlKUzus+HX5bZznK5ZC2Dh6Zl8YG6w702TYNvLRNP8I3513QmA0nu6tZW1ZhNEAd3Q3pkW8JKKwvAjfgJuOpWDr8NJAX2lPaTzssN6sCW0zKlwjBoZZrvAmkt2dqHS0nnJ71PKitj3+1nfn83Y9mx/3vHZw3ljFwh+17F7iVX5Ljy38oRpKkN8QM1fcIamDHgigAAAABJRU5ErkJggg=="/>
-
-                        </dt>
-                        <dd className="col-sm-9"><p className="text-left"><small>Lastest Swift 4.0 Design Patterns</small></p></dd>
-
-                        <dt className="col-sm-3"><i className="nc-icon nc-tile-56"></i></dt>
-                        <dd className="col-sm-9"><p className="text-left"><small>iOS Frameworks and Libraries</small></p></dd>
-
-                      </dl>
-                      <p></p>
-
-                      <div className="card-footer">
-                        <a href="#pablo" className="btn btn-link btn-neutral">
-                          <i className="fa fa-book" aria-hidden="true"></i> Show more
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-3">
-                    <div className="card" data-background="image" style={background2}>
-                      <div className="card-block">
-                        <h6 className="card-category">Frontend Web Development</h6>
-                        <div className="card-icon">
-                          <i className="nc-icon nc-compass-05"></i>
-                        </div>
-                        <p className="card-description">
-                        </p><dl className="row">
-                        <dt className="col-sm-3">
-                          <img alt="" className="icon icons8-Swift-Filled" width="25" height="25" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAABmUlEQVRIS72WjVHCQBCFv1eBUoF2oB0oFYgdSAViBUIFQgVSglSgdmAJ2AFUsM7L5PSAhIQf2ZlMmJvsfrfvdvcQJzDljIi4BR6B3gHsN2Ai6SPF+IVExAPwekDwdde+pKkXC0iZwfsRASlU1xkliFO8+wfITFIvQWIPwBI4a/BbSOocApkA18DNNpBs5Zlsy2RWI2Wxy4hwFdWCmiB27gAXwBMwrpCnC3yVj7/bsCaIHUbAJXAF9AGXpH8nG0kabqvONhAHc3Cb9R+WoFSJBaSU3BnlGyic2kIWgGXx207ziBgAL5ZRkmV0r/ntabFibSF2KkCSvNvCIsKZGVqsRYQzej4EUgnKA2bZtcpkDnzXlKUzus+HX5bZznK5ZC2Dh6Zl8YG6w702TYNvLRNP8I3513QmA0nu6tZW1ZhNEAd3Q3pkW8JKKwvAjfgJuOpWDr8NJAX2lPaTzssN6sCW0zKlwjBoZZrvAmkt2dqHS0nnJ71PKitj3+1nfn83Y9mx/3vHZw3ljFwh+17F7iVX5Ljy38oRpKkN8QM1fcIamDHgigAAAABJRU5ErkJggg=="/>
-
-                        </dt>
-                        <dd className="col-sm-9"><p className="text-left"><small>Lastest Swift 4.0 Design Patterns</small></p></dd>
-
-                        <dt className="col-sm-3"><i className="nc-icon nc-tile-56"></i></dt>
-                        <dd className="col-sm-9"><p className="text-left"><small>iOS Frameworks and Libraries</small></p></dd>
-
-                      </dl>
-                      <p></p>
-                      <div className="card-footer">
-                        <a href="#pablo" className="btn btn-link btn-neutral">
-                          <i className="fa fa-book" aria-hidden="true"></i> Show more
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-3">
-                    <div className="card" data-background="image" style={background3}>
-                      <div className="card-block">
-                        <h6 className="card-category">Fullstack Web Development</h6>
-                        <div className="card-icon">
-                          <i className="nc-icon nc-world-2"></i>
-                        </div>
-                        <p className="card-description">
-                        </p><dl className="row">
-                        <dt className="col-sm-3">
-                          <img alt="" className="icon icons8-Swift-Filled" width="25" height="25" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAABmUlEQVRIS72WjVHCQBCFv1eBUoF2oB0oFYgdSAViBUIFQgVSglSgdmAJ2AFUsM7L5PSAhIQf2ZlMmJvsfrfvdvcQJzDljIi4BR6B3gHsN2Ai6SPF+IVExAPwekDwdde+pKkXC0iZwfsRASlU1xkliFO8+wfITFIvQWIPwBI4a/BbSOocApkA18DNNpBs5Zlsy2RWI2Wxy4hwFdWCmiB27gAXwBMwrpCnC3yVj7/bsCaIHUbAJXAF9AGXpH8nG0kabqvONhAHc3Cb9R+WoFSJBaSU3BnlGyic2kIWgGXx207ziBgAL5ZRkmV0r/ntabFibSF2KkCSvNvCIsKZGVqsRYQzej4EUgnKA2bZtcpkDnzXlKUzus+HX5bZznK5ZC2Dh6Zl8YG6w702TYNvLRNP8I3513QmA0nu6tZW1ZhNEAd3Q3pkW8JKKwvAjfgJuOpWDr8NJAX2lPaTzssN6sCW0zKlwjBoZZrvAmkt2dqHS0nnJ71PKitj3+1nfn83Y9mx/3vHZw3ljFwh+17F7iVX5Ljy38oRpKkN8QM1fcIamDHgigAAAABJRU5ErkJggg=="/>
-
-                        </dt>
-                        <dd className="col-sm-9"><p className="text-left"><small>Lastest Swift 4.0 Design Patterns</small></p></dd>
-
-                        <dt className="col-sm-3"><i className="nc-icon nc-tile-56"></i></dt>
-                        <dd className="col-sm-9"><p className="text-left"><small>iOS Frameworks and Libraries</small></p></dd>
-
-                      </dl>
-                      <p></p>
-                      <div className="card-footer">
-                        <a href="#pablo" className="btn btn-link btn-neutral">
-                          <i className="fa fa-book" aria-hidden="true"></i> Show more
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-3">
-                    <div className="card" data-background="image" style={background4}>
-                      <div className="card-block">
-                        <h6 className="card-category">Design</h6>
-                        <div className="card-icon">
-                          <i className="nc-icon nc-diamond"></i>
-                        </div>
-                        <p className="card-description">
-                        </p><dl className="row">
-                        <dt className="col-sm-3">
-                          <img alt="" className="icon icons8-Swift-Filled" width="25" height="25" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAABmUlEQVRIS72WjVHCQBCFv1eBUoF2oB0oFYgdSAViBUIFQgVSglSgdmAJ2AFUsM7L5PSAhIQf2ZlMmJvsfrfvdvcQJzDljIi4BR6B3gHsN2Ai6SPF+IVExAPwekDwdde+pKkXC0iZwfsRASlU1xkliFO8+wfITFIvQWIPwBI4a/BbSOocApkA18DNNpBs5Zlsy2RWI2Wxy4hwFdWCmiB27gAXwBMwrpCnC3yVj7/bsCaIHUbAJXAF9AGXpH8nG0kabqvONhAHc3Cb9R+WoFSJBaSU3BnlGyic2kIWgGXx207ziBgAL5ZRkmV0r/ntabFibSF2KkCSvNvCIsKZGVqsRYQzej4EUgnKA2bZtcpkDnzXlKUzus+HX5bZznK5ZC2Dh6Zl8YG6w702TYNvLRNP8I3513QmA0nu6tZW1ZhNEAd3Q3pkW8JKKwvAjfgJuOpWDr8NJAX2lPaTzssN6sCW0zKlwjBoZZrvAmkt2dqHS0nnJ71PKitj3+1nfn83Y9mx/3vHZw3ljFwh+17F7iVX5Ljy38oRpKkN8QM1fcIamDHgigAAAABJRU5ErkJggg=="/>
-
-                        </dt>
-                        <dd className="col-sm-9"><p className="text-left"><small>Lastest Swift 4.0 Design Patterns</small></p></dd>
-
-                        <dt className="col-sm-3"><i className="nc-icon nc-tile-56"></i></dt>
-                        <dd className="col-sm-9"><p className="text-left"><small>iOS Frameworks and Libraries</small></p></dd>
-
-                      </dl>
-                      <p></p>
-                      <div className="card-footer">
-                        <a href="#pablo" className="btn btn-link btn-neutral">
-                          <i className="fa fa-book" aria-hidden="true"></i> Show more
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                {this.renderColoredCards()}
               </div>
             </div>
           </section>

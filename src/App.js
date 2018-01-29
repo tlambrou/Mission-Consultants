@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './App.css'
 import Home from './components/Home'
 import Profile from './components/Profile'
+import ProfileForm from './components/ProfileForm'
 import Data from './Data'
 
 var ReactRouter = require('react-router-dom')
@@ -16,10 +17,12 @@ class App extends Component {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route path={`/contractors/:slug`} component={Profile} />
-          {Data.contractors.map((contractor) => {
+          <Route path={`/add`} component={ProfileForm} />
+          {/*{Data.contractors.map((contractor) => {
             var name = contractor.firstName.toLowerCase()
             return <Route key={name} path={`/contractors/:slug`} component={Profile} />
-          })}
+          })}*/}
+
         </Switch>
       </Router>
     )
