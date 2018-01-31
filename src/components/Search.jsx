@@ -3,6 +3,7 @@ import Results from './Results'
 // import data from '../Data'
 import Fuse from 'fuse.js'
 import axios from 'axios'
+import serverPath from '../paths.js'
 
 import '../pk2-pro-html-v2/assets/css/bootstrap.min.css'
 import '../pk2-pro-html-v2/assets/css/nucleo-icons.css'
@@ -32,7 +33,7 @@ export class Search extends Component {
 
   componentWillMount(){
     console.log('componentDidMount')
-    axios.get('http://localhost:8000/allmspf')
+    axios.get(`${serverPath}/allmspf`)
     .then(response => {
       if (response.status === 200) {
         const data = this.state.slugs.map((slug) => {

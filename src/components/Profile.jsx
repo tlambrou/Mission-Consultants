@@ -7,6 +7,7 @@ import '../App.css'
 import Navbar from './Navbar'
 import ProfileTechCard from './ProfileTechCard'
 import axios from 'axios'
+import serverPath from '../paths.js'
 
 export class Profile extends Component {
 
@@ -23,7 +24,7 @@ export class Profile extends Component {
   }
 
   getContractor(){
-    axios.get(`http://localhost:8000/mslink/${this.props.match.params.slug}`)
+    axios.get(`${serverPath}/mslink/${this.props.match.params.slug}`)
     .then(response => {
       console.log(response)
       if (response.status === 200) {
