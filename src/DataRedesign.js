@@ -264,6 +264,7 @@ export var data = {
             level: 42
           }, {
             ref: this.tech.toolsAndLibraries.mapkit,
+            rate: 70.00,
             level: 86
           }, {
             ref: this.tech.toolsAndLibraries.bootstrap,

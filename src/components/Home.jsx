@@ -13,13 +13,13 @@ export class Home extends Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header loggedIn={true} />
         <Services />
         <Search />
         <Footer />
       </div>
-    )
+      )
+    }
   }
-}
 
-export default Home
+  export default Home
