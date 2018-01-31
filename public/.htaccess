@@ -1,0 +1,3 @@
+SSLOptions +StrictRequire
+SSLRequireSSL
+SSLRequire %{HTTP_HOST} eq "missionconsultants.io"
