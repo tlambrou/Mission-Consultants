@@ -6,7 +6,7 @@ export var data = {
       title: "Full-Stack Web, iOS Engineer, Designer",
       bio: "I am a passionate and charismatic full stack web and iOS software engineer with a penchant for solving problems by creating robust and impactful tech.  I was the founder and lead frontend developer for pullPixel Media and serviced clients needing web development and design for over 6 years.",
       email: "lambrou@gmail.com",
-      website: "http://tassos.net",
+      website: "https://tassos.net",
       linkedIn: "https://www.linkedin.com/in/lambrou/",
       github: "https://github.com/tlambrou",
       photoURL: "/img/profiles/tassos.jpg",

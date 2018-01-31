@@ -20,13 +20,13 @@ export class Results extends Component {
                 {result.about_description.substring(0, Math.min(60, result.about_description.length))}...
               </p>
               <div className="card-footer text-center">
-                <a href={`http://tassos.net`} target="_blank" className="btn btn-just-icon btn-outline-default">
+                <a href={`https://tassos.net`} target="_blank" className="btn btn-just-icon btn-outline-default">
                   <i className="fa fa-globe" aria-hidden="true"></i>
                 </a>
-                <a href={`http://www.linkedin.com/in/${result.linkedin_handle}`} target="_blank" className="btn btn-just-icon btn-outline-default">
+                <a href={`https://www.linkedin.com/in/${result.linkedin_handle}`} target="_blank" className="btn btn-just-icon btn-outline-default">
                   <i className="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
-                <a href={`http://github.com/${result.github_handle}`} target="_blank" className="btn btn-just-icon btn-outline-default ">
+                <a href={`https://github.com/${result.github_handle}`} target="_blank" className="btn btn-just-icon btn-outline-default ">
                   <i className="fa fa-github-alt" aria-hidden="true"></i>
                 </a>
                 <a href={email} target="_blank" className="btn btn-just-icon btn-outline-default">

@@ -1,5 +1,5 @@
 const serverPaths = {
-  dev: 'http://localhost:8000',
+  dev: 'https://localhost:8000',
   prod: 'https://mission.herokuapp.com'
 }
 
