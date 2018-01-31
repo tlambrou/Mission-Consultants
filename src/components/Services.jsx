@@ -234,7 +234,7 @@ export class Services extends Component {
                     <br/>
                   </div>
                 </div>
-                {this.renderColoredCards()}
+                {this.renderImageCards()}
               </div>
             </div>
           </section>

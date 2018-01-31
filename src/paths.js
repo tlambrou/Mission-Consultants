@@ -1,6 +1,6 @@
 const serverPaths = {
-  dev: 'https://localhost:8000',
-  prod: 'https://missionconsultants.herokuapp.com'
+  dev: 'http://localhost:8000',
+  prod: 'http://missionconsultants.herokuapp.com'
 }
 
 const serverPath = (process.env.NODE_ENV === 'development') ? serverPaths.dev : serverPaths.prod

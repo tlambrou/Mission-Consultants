@@ -107,11 +107,7 @@ export class Search extends Component {
         <div className="row align-items-center">
           <div className="col-md-4 offset-md-4">
             <a href="" className="btn btn-round">
-              <div className='uil-reload-css reload-small'>
-                <div>
-                </div>
-              </div>   Loading Contractors...
-            </a>
+              <div className='uil-reload-css reload-small'></div>   Loading Contractors...</a>
           </div>
         </div>
       )
