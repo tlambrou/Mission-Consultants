@@ -19,62 +19,55 @@ export class Footer extends Component {
                     <div className="col-md-4 col-sm-4">
                         <div className="logo text-center">
                             <h3>Mission Consultants</h3>
+                            <a href="https://www.missionconsultants.io">MissionConsultants.io</a>
                         </div>
                     </div>
                     <div className="col-md-6 offset-md-2 col-sm-8">
                         <div className="links">
                             <ul>
                                 <li>
-                                    <a href="#paper-kit">
+                                    <a href="#home">
                                         Home
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#paper-kit">
-                                        Company
+                                    <a href="#services">
+                                        Services
                                     </a>
                                 </li>
+
                                 <li>
-                                    <a href="#paper-kit">
-                                        Portfolio
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#paper-kit">
+                                    <a href="#search">
                                        Team
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#paper-kit">
+                                    <a href="#contact-us">
                                        Contact
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="#paper-kit">
-                                       Join us!
-                                    </a>
-                                </li>
+
                             </ul>
                             <hr/>
                             <div className="copyright">
                                 <div className="pull-left">
                                     © <script>document.write(new Date().getFullYear())</script>{this.currentYear()}, made with <i className="fa fa-heart heart"></i> in San Francisco
                                 </div>
-                                <div className="pull-right">
+                                {/*<div className="pull-right">
                                     <ul>
                                         <li>
-                                            <a href="#paper-kit">
+                                            <a >
                                                 Terms
                                             </a>
                                         </li>
-                                        |
+                                        &nbsp; | &nbsp;
                                         <li>
-                                            <a href="#paper-kit">
+                                            <a>
                                                 Privacy
                                             </a>
                                         </li>
                                     </ul>
-                                </div>
+                                </div>*/}
                             </div>
                         </div>
                     </div>

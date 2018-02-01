@@ -1,11 +1,7 @@
 import React, { Component } from 'react'
-// import Data from '../Data'
-import '../pk2-pro-html-v2/assets/css/bootstrap.min.css'
-import '../pk2-pro-html-v2/assets/css/nucleo-icons.css'
-import '../pk2-pro-html-v2/assets/css/paper-kit.css'
 import '../App.css'
 import Navbar from './Navbar'
-import ProfileTechCard from './ProfileTechCard'
+// import ProfileTechCard from './ProfileTechCard'
 import axios from 'axios'
 import serverPath from '../paths.js'
 
@@ -112,7 +108,7 @@ render() {
         <div className="row">
           <div className="col-md-8 offset-md-2">
             {/*Back button */}
-            <a href="javascript:history.back()" className="btn btn-sm btn-link btn-move-left"><i className="nc-icon nc-minimal-left"></i> Back</a>
+            <a href={`javascript:history.back()`} className="btn btn-sm btn-link btn-move-left"><i className="nc-icon nc-minimal-left"></i> Back</a>
             {/*Render Profile...*/}
             {this.renderProfile()}
           </div>

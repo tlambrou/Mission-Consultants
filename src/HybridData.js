@@ -12,6 +12,7 @@ export var data = {
       // photoURL: "/img/profiles/tassos.jpg", // profile_img_url
       slug: "tassos"
       website: "https://tassos.net",
+      rate: 80.00,
       tech: {
         languages: [ "Python", "Javascript", "Swift", "Ruby", "R", "C++", "PHP", "HTML5", "CSS3", "Sass" ],
         frameworks: [ "Node.js", "Express.js", "UIKit", "Ruby on Rails", "Flask", "Vapor", "React", "React Native", "SpriteKit", "Ionic", "Joomla"],

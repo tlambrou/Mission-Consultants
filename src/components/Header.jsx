@@ -12,7 +12,7 @@ export const background = {
 export class Header extends Component {
   render() {
     return (
-      <div className="header-2">
+      <div id="home" className="header-2">
         <Navbar />
         <div className="page-header" style={ background }>
           <div className="filter"></div>

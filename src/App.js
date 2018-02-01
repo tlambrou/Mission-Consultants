@@ -3,7 +3,6 @@ import './App.css'
 import Home from './components/Home'
 import Profile from './components/Profile'
 import ProfileForm from './components/ProfileForm'
-import Data from './Data'
 
 var ReactRouter = require('react-router-dom')
 var Router = ReactRouter.BrowserRouter
