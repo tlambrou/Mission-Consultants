@@ -17,8 +17,8 @@ export class Navbar extends Component {
             <a href="#services" className="btn btn-link btn-neutral">Services</a>
             <a href="#search" className="btn btn-link btn-neutral">Contractors</a>
             <a href="#contact-us" className="btn btn-link btn-neutral">Contact Us</a>
-            <a href="#missionconsultants" target="_blank" className="btn btn-link btn-neutral"><i className="fa fa-twitter"></i></a>
-            <a href="#missionconsultants" target="_blank" className="btn btn-link btn-neutral"><i className="fa fa-facebook"></i></a>
+            {/*<a href="#missionconsultants" target="_blank" className="btn btn-link btn-neutral"><i className="fa fa-twitter"></i></a>
+            <a href="#missionconsultants" target="_blank" className="btn btn-link btn-neutral"><i className="fa fa-facebook"></i></a>*/}
           </ul>
         </div>
       </div>

@@ -23,18 +23,30 @@ export class Services extends Component {
     return (
       <div className="row">
         <div className="col-md-3">
-          <div className="card card-pricing" data-color="orange">
+          <div className="card card-pricing" data-color="blue">
             <div className="card-body">
+              <h6 className="card-category">iOS Development</h6>
               <div className="card-icon">
-                <span className="icon-simple"><i className="nc-icon nc-basket"></i></span>
+                <i className="nc-icon nc-mobile"></i>
               </div>
-              <h3 className="card-title">$199</h3>
+              {/*<h3 className="card-title">$199</h3>*/}
 
               <p className="card-description">
-                This is good if your company size is between 5 and 20 employees.
+                <dl className="row">
+                  <dt className="col-sm-3">
+                    <img alt="" className="icon icons8-Swift-Filled" width="25" height="25" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAABmUlEQVRIS72WjVHCQBCFv1eBUoF2oB0oFYgdSAViBUIFQgVSglSgdmAJ2AFUsM7L5PSAhIQf2ZlMmJvsfrfvdvcQJzDljIi4BR6B3gHsN2Ai6SPF+IVExAPwekDwdde+pKkXC0iZwfsRASlU1xkliFO8+wfITFIvQWIPwBI4a/BbSOocApkA18DNNpBs5Zlsy2RWI2Wxy4hwFdWCmiB27gAXwBMwrpCnC3yVj7/bsCaIHUbAJXAF9AGXpH8nG0kabqvONhAHc3Cb9R+WoFSJBaSU3BnlGyic2kIWgGXx207ziBgAL5ZRkmV0r/ntabFibSF2KkCSvNvCIsKZGVqsRYQzej4EUgnKA2bZtcpkDnzXlKUzus+HX5bZznK5ZC2Dh6Zl8YG6w702TYNvLRNP8I3513QmA0nu6tZW1ZhNEAd3Q3pkW8JKKwvAjfgJuOpWDr8NJAX2lPaTzssN6sCW0zKlwjBoZZrvAmkt2dqHS0nnJ71PKitj3+1nfn83Y9mx/3vHZw3ljFwh+17F7iVX5Ljy38oRpKkN8QM1fcIamDHgigAAAABJRU5ErkJggg=="/>
+
+                  </dt>
+                  <dd className="col-sm-9"><p className="text-left"><small>Lastest Swift 4.0 Design Patterns</small></p></dd>
+
+                  <dt className="col-sm-3"><i className="nc-icon nc-box-2"></i></dt>
+                  <dd className="col-sm-9"><p className="text-left"><small>iOS Frameworks and Libraries</small></p></dd>
+
+                </dl>
               </p>
+
               <div className="card-footer">
-                <a href="#pablo" className="btn btn-neutral btn-round">Choose Plan</a>
+                <a href="#contact-us" className="btn btn-neutral btn-round">Explore Rates</a>
               </div>
             </div>
           </div>
@@ -43,52 +55,82 @@ export class Services extends Component {
         <div className="col-md-3">
           <div className="card card-pricing" data-color="green">
             <div className="card-body">
+              <h6 className="card-category">Fullstack Web Development</h6>
               <div className="card-icon">
-                <span className="icon-simple"><i className="nc-icon nc-watch-time"></i></span>
+                <i className="nc-icon nc-world-2"></i>
               </div>
-              <h3 className="card-title">$249</h3>
+              {/*<h3 className="card-title">$199</h3>*/}
 
               <p className="card-description">
-                This is good if your company size is between 21 and 59 employees.
+                <dl className="row">
+                  <dt className="col-sm-3"><i className="nc-icon nc-briefcase-24"></i></dt>
+
+                  <dd className="col-sm-9"><p className="text-left"><small>The Most Powerful Web Frameworks & Databases</small></p></dd>
+
+                  <dt className="col-sm-3"><i className="nc-icon nc-ruler-pencil"></i></dt>
+                  <dd className="col-sm-9"><p className="text-left"><small>JS, Python, Ruby, PHP, HTML, CSS </small></p></dd>
+
+                </dl>
               </p>
+
               <div className="card-footer">
-                <a href="#pablo" className="btn btn-neutral btn-round">Choose Plan</a>
+                <a href="#contact-us" className="btn btn-neutral btn-round">Explore Rates</a>
               </div>
             </div>
           </div>
         </div>
 
         <div className="col-md-3">
-          <div className="card card-pricing" data-color="blue">
+          <div className="card card-pricing" data-color="yellow">
             <div className="card-body">
+              <h6 className="card-category">Front-end Web Development</h6>
               <div className="card-icon">
-                <span className="icon-simple"><i className="nc-icon nc-settings"></i></span>
+                <i className="nc-icon nc-compass-05"></i>
               </div>
-              <h3 className="card-title">$359</h3>
+              {/*<h3 className="card-title">$199</h3>*/}
 
               <p className="card-description">
-                This is good if your company size is between 60 and 159 employees.
+                <dl className="row">
+                  <dt className="col-sm-3"><i className="nc-icon nc-album-2"></i></dt>
+
+                  <dd className="col-sm-9"><p className="text-left"><small>Pixel-Perfect Mobile Responsive Designs</small></p></dd>
+
+                  <dt className="col-sm-3"><i className="nc-icon nc-atom"></i></dt>
+                  <dd className="col-sm-9"><p className="text-left"><small>React/Angular with the latest best practices</small></p></dd>
+
+                </dl>
               </p>
+
               <div className="card-footer">
-                <a href="#pablo" className="btn btn-neutral btn-round">Choose Plan</a>
+                <a href="#contact-us" className="btn btn-neutral btn-round">Explore Rates</a>
               </div>
             </div>
           </div>
         </div>
 
         <div className="col-md-3">
-          <div className="card card-pricing" data-color="purple">
+          <div className="card card-pricing" data-color="orange">
             <div className="card-body">
+              <h6 className="card-category">UI/UX Design</h6>
+
               <div className="card-icon">
-                <span className="icon-simple"><i className="nc-icon nc-istanbul"></i></span>
+                <span className="icon-simple"><i className="nc-icon nc-diamond"></i></span>
               </div>
-              <h3 className="card-title">$599</h3>
+              {/*<h3 className="card-title">$599</h3>*/}
 
               <p className="card-description">
-                This is good if your company size is between 160 and 299 employees.
+                <dl className="row">
+                  <dt className="col-sm-3"><i className="nc-icon nc-satisfied"></i></dt>
+
+                  <dd className="col-sm-9"><p className="text-left"><small>User Researched Best Practices and Behavior</small></p></dd>
+
+                  <dt className="col-sm-3"><i className="nc-icon nc-planet"></i></dt>
+                  <dd className="col-sm-9"><p className="text-left"><small>Designs that speak to your customers</small></p></dd>
+
+                </dl>
               </p>
               <div className="card-footer">
-                <a href="#pablo" className="btn btn-neutral btn-round">Choose Plan</a>
+                <a href="#pablo" className="btn btn-neutral btn-round">Explore Rates</a>
               </div>
             </div>
           </div>
@@ -231,7 +273,7 @@ export class Services extends Component {
                     <br/>
                   </div>
                 </div>
-                {this.renderImageCards()}
+                {this.renderColoredCards()}
               </div>
             </div>
           </section>
@@ -240,56 +282,56 @@ export class Services extends Component {
           <div className="container">
             <div className="row">
               <div className="col-md-8 offset-md-2  text-center">
-                <h2 className="title">Why our products are the best</h2>
-                <h5 className="description">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn't scroll to get here.</h5>
+                <h2 className="title">What our consultants offer</h2>
+                <h5 className="description">Software consulting services help you focus on what you really need and align technology, operational and financial objectives. We offer a blend of technology knowledge and analytical tools to help you create and transform applications, processes and operations in line with your unique possibilities.</h5>
               </div>
             </div>
             <div className="row">
+              <div className="col-md-3">
+                <div className="info">
+                  <div className="icon icon-info">
+                    <i className="nc-icon nc-air-baloon"></i>
+                  </div>
+                  <div className="description">
+                    <h4 className="info-title">Mobile Apps</h4>
+                    <p className="description">Mobile development isn't just about building an app anymore. Mobile is about building an experience that breaks the boundaries of platforms, locations, and devices. It&apos;s a flawless, smarter user-first experience that is consumed everywhere and on any device. </p>
+                    {/*<a href="" className="btn btn-link btn-danger">See more</a>*/}
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3">
+                <div className="info">
+                  <div className="icon icon-success">
+                    <i className="nc-icon nc-laptop"></i>
+                  </div>
+                  <div className="description">
+                    <h4 className="info-title">Web Apps</h4>
+                    <p>We build modern web applications of all shapes and sizes using the latest technologies. From online marketplaces and platforms to SaaS solutions, custom business software, and chrome extensions... whatever your idea, we can build it, on time and on budget.</p>
+                    {/*<a href="" className="btn btn-link btn-danger">See more</a>*/}
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3">
+                <div className="info">
+                  <div className="icon icon-warning">
+                    <i className="nc-icon nc-key-25"></i>
+                  </div>
+                  <div className="description">
+                    <h4 className="info-title">Integrations</h4>
+                    <p>To get the most out of your technology, it needs to play nice with others. We specialize in integrating enterprise technologies to improve efficiencies, reduce wasted time and effort, and increase visibility into the data and metrics that matter most. </p>
+                    {/*<a href="" className="btn btn-link btn-danger">See more</a>*/}
+                  </div>
+                </div>
+              </div>
               <div className="col-md-3">
                 <div className="info">
                   <div className="icon icon-danger">
                     <i className="nc-icon nc-palette"></i>
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Beautiful Gallery</h4>
-                    <p className="description">Spend your time generating new ideas. You don't have to think of implementing.</p>
-                    <a href="#pkp" className="btn btn-link btn-danger">See more</a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-3">
-                <div className="info">
-                  <div className="icon icon-danger">
-                    <i className="nc-icon nc-bulb-63"></i>
-                  </div>
-                  <div className="description">
-                    <h4 className="info-title">New Ideas</h4>
-                    <p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient.</p>
-                    <a href="#pkp" className="btn btn-link btn-danger">See more</a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-3">
-                <div className="info">
-                  <div className="icon icon-danger">
-                    <i className="nc-icon nc-chart-bar-32"></i>
-                  </div>
-                  <div className="description">
-                    <h4 className="info-title">Statistics</h4>
-                    <p>Choose from a veriety of many colors resembling sugar paper pastels.</p>
-                    <a href="#pkp" className="btn btn-link btn-danger">See more</a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-3">
-                <div className="info">
-                  <div className="icon icon-danger">
-                    <i className="nc-icon nc-sun-fog-29"></i>
-                  </div>
-                  <div className="description">
                     <h4 className="info-title">Delightful design</h4>
-                    <p>Find unique and handmade delightful designs related items directly from our sellers.</p>
-                    <a href="#pkp" className="btn btn-link btn-danger">See more</a>
+                    <p>The user interface is the window through which the world experiences your brand and your product. A powerful user interface bridges the distance between the human brain and the digital product. Understanding human behavior is key to unlocking an exceptional user experience.</p>
+                    {/*<a href="" className="btn btn-link btn-danger">See more</a>*/}
                   </div>
                 </div>
               </div>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import '../App.css'
 import Navbar from './Navbar'
+import ContactUs from './ContactUs'
 // import ProfileTechCard from './ProfileTechCard'
 import axios from 'axios'
 import serverPath from '../paths.js'
@@ -114,6 +115,7 @@ render() {
           </div>
         </div>
       </div>
+      <ContactUs />
     </div>
   )
 }

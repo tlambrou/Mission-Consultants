@@ -122,10 +122,9 @@ export class ContactUs extends Component {
                             </div>
                             <div className="description">
                             <h4 className="info-title">
-                            Give us a ring
+                            Drop Us a Line
                             </h4>
-                            <p> Tassos Lambrou<br />
-                            +1 415-868-5262<br />
+                            <p> +1 415-868-5262<br />
                           Mon - Fri, 9:00-17:00 PST
                             </p>
                             </div>
