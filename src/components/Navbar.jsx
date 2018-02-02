@@ -1,8 +1,4 @@
 import React, { Component } from 'react'
-import '../pk2-pro-html-v2/assets/css/bootstrap.min.css'
-import '../pk2-pro-html-v2/assets/css/nucleo-icons.css'
-import '../pk2-pro-html-v2/assets/css/paper-kit.css'
-
 
 export class Navbar extends Component {
   render() {
@@ -20,9 +16,9 @@ export class Navbar extends Component {
           <ul className="navbar-nav ml-auto">
             <a href="#services" className="btn btn-link btn-neutral">Services</a>
             <a href="#search" className="btn btn-link btn-neutral">Contractors</a>
-            <a href="#paper-kit" className="btn btn-link btn-neutral">Contact Us</a>
-            <a href="#paper-kit" target="_blank" className="btn btn-link btn-neutral"><i className="fa fa-twitter"></i></a>
-            <a href="#paper-kit" target="_blank" className="btn btn-link btn-neutral"><i className="fa fa-facebook"></i></a>
+            <a href="#contact-us" className="btn btn-link btn-neutral">Contact Us</a>
+            <a href="#missionconsultants" target="_blank" className="btn btn-link btn-neutral"><i className="fa fa-twitter"></i></a>
+            <a href="#missionconsultants" target="_blank" className="btn btn-link btn-neutral"><i className="fa fa-facebook"></i></a>
           </ul>
         </div>
       </div>

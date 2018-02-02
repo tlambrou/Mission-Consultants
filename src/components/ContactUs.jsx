@@ -28,7 +28,7 @@ export class ContactUs extends Component {
       <div className="section-white" id="contact-us">
         <div
           className="contactus-1 section-image"
-          style={{backgroundImage: 'url("/img/backgrounds/nasa-53884.jpg")'}}>
+          style={{backgroundImage: 'url("/pk2-pro-html-v2/assets/img/sections/jan-sendereks.jpg")'}}>
           <div className="container">
             <div className="row">
               <div className="col-md-11 offset-md-1">

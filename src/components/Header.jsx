@@ -1,20 +1,12 @@
 import React, { Component } from 'react'
-import '../pk2-pro-html-v2/assets/css/bootstrap.min.css'
-import '../pk2-pro-html-v2/assets/css/nucleo-icons.css'
-import '../pk2-pro-html-v2/assets/css/paper-kit.css'
-import Background from '../pk2-pro-html-v2/assets/img/sections/jan-sendereks.jpg'
 import Navbar from './Navbar'
-
-export const background = {
-  backgroundImage: `url( ${ Background } )`
-}
 
 export class Header extends Component {
   render() {
     return (
       <div id="home" className="header-2">
         <Navbar />
-        <div className="page-header" style={ background }>
+        <div className="page-header" style={{backgroundImage: `url(/img/backgrounds/gordon-mak-522710.jpg)`}}>
           <div className="filter"></div>
           <div className="content-center">
             <div className="container">

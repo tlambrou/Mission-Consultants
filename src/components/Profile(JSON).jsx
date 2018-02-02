@@ -1,8 +1,5 @@
 import React, { Component } from 'react'
 import Data from '../Data'
-import '../pk2-pro-html-v2/assets/css/bootstrap.min.css'
-import '../pk2-pro-html-v2/assets/css/nucleo-icons.css'
-import '../pk2-pro-html-v2/assets/css/paper-kit.css'
 import '../App.css'
 import Navbar from './Navbar'
 import ProfileTechCard from './ProfileTechCard'
@@ -14,7 +11,7 @@ export class Profile extends Component {
   }
 
   fetchMSProfile(slug) {
-    
+
   }
 
   render() {
