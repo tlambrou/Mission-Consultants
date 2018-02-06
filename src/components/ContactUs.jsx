@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import Input from './Input'
+import axios from 'axios'
+import serverPath from '../paths'
 
 export class ContactUs extends Component {
 
@@ -14,13 +16,55 @@ export class ContactUs extends Component {
         phone: "",
         message: ""
       },
-      robot: false
+      robot: false,
+      contactSent: false
     }
   }
 
   currentYear() {
     var now = new Date()
     return now.getFullYear()
+  }
+
+  submitContact(event) {
+    event.preventDefault()
+    axios.post(`${serverPath}/inquiry`, this.state.contact)
+    .then(response => {
+      if (response.status === 200) {
+        this.setState({contactSent: true})
+        setInterval(()=>{ this.setState({contactSent: false}) }, 4000);
+      }
+    })
+    .catch(error => {
+      console.log('error!', error)
+    })
+  }
+
+  renderButton() {
+    if (this.state.robot) {
+      return (<button
+        onClick={(e) => this.submitContact(e)}
+        type="submit"
+        className="btn btn-primary pull-right">Send Inquiry
+      </button>)
+    } else {
+      return (<button
+        disabled
+        onClick={(e) => this.submitContact(e)}
+        type="submit"
+        className="btn btn-neutral pull-right">Send Inquiry
+      </button>)
+    }
+  }
+
+  renderAlert() {
+    if (this.state.contactSent) {
+      return (
+        <div className="alert alert-success" role="alert">
+          Your message has been successfully sent!
+        </div>
+      )
+    }
   }
 
   render() {
@@ -42,7 +86,7 @@ export class ContactUs extends Component {
                         <div className="card-block">
                           <Input
                             text={this.state.contact.company}
-                            onChange={(newValue) => this.setState({contact: {company: newValue}})}
+                            onChange={(newValue) => this.setState({contact: {...this.state.contact, company: newValue}})}
                             validation="([a-zA-Z0-9@.,]{2,})"
                             placeholder="Name of Company or DBA"
                             label="Company"
@@ -51,7 +95,7 @@ export class ContactUs extends Component {
                             <div className="col-md-6">
                               <Input
                                 text={this.state.contact.firstName}
-                                onChange={(newValue) => this.setState({contact: {firstName: newValue}})}
+                                onChange={(newValue) => this.setState({contact: {...this.state.contact, firstName: newValue}})}
                                 placeholder="First Name"
                                 label="First Name"
                                 />
@@ -60,7 +104,7 @@ export class ContactUs extends Component {
 
                               <Input
                                 text={this.state.contact.lastName}
-                                onChange={(newValue) => this.setState({contact: {lastName: newValue}})}
+                                onChange={(newValue) => this.setState({contact: {...this.state.contact, lastName: newValue}})}
                                 placeholder="Last Name"
                                 label="Last Name"
                                 />
@@ -70,13 +114,13 @@ export class ContactUs extends Component {
                             type="email"
                             label="Email Address"
                             text={this.state.contact.email}
-                            onChange={(newValue) => this.setState({contact: {email: newValue}})}
+                            onChange={(newValue) => this.setState({contact: {...this.state.contact, email: newValue}})}
                             placeholder="Email"
                             validation="(?:[a-z0-9!#$%'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%'*+/=?^_`{|}~-]+)*|(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*)@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])"
                             />
                           <Input
                             text={this.state.contact.phone}
-                            onChange={(newValue) => this.setState({contact: {phone: newValue}})}
+                            onChange={(newValue) => this.setState({contact: {...this.state.contact, phone: newValue}})}
                             placeholder="Phone Number"
                             label="Phone Number"
                             validation="^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$"
@@ -86,6 +130,8 @@ export class ContactUs extends Component {
                               Project Details/Message
                             </label>
                             <textarea
+                              onChange={event => this.setState({contact: {...this.state.contact, message: event.target.value}})}
+                              value={this.state.contact.message}
                               name="message"
                               className="form-control"
                               id="message"
@@ -95,66 +141,68 @@ export class ContactUs extends Component {
                           <div className="row">
                             <div className="col-md-6">
                               <div className="checkbox">
-                                <input id="checkbox1" type="checkbox" />
-                                <label htmlFor="checkbox1">
-                                  <small>I'm not a robot !</small>
-                                </label>
+                                <input onChange={(e) => {
+                                    this.setState({robot: e.target.checked})
+                                  }} id="checkbox1" type="checkbox" checked={this.state.robot}/>
+                                  <label htmlFor="checkbox1">
+                                    <small>I'm not a robot !</small>
+                                  </label>
+                                </div>
+                              </div>
+                              <div className="col-md-6">
+                                {this.renderButton()}
                               </div>
                             </div>
-                            <div className="col-md-6">
-                              <button
-                                type="submit"
-                                className="btn btn-primary pull-right">Send Message
-                              </button>
-                            </div>
                           </div>
-                        </div>
-                      </form>
-                    </div>
-                    <div className="col-md-5 ">
-                      <div className="card-block">
+                        </form>
+                        {this.renderAlert()}
+                      </div>
+                      <div className="col-md-5 ">
+                        <div className="card-block">
 
-                        <div className="info info-horizontal">
-                          <div className="icon icon-danger">
-                            <i
-                            className="nc-icon nc-badge"
-                            aria-hidden="true" />
-                            </div>
-                            <div className="description">
-                            <h4 className="info-title">
-                            Drop Us a Line
-                            </h4>
-                            <p> +1 415-868-5262<br />
-                          Mon - Fri, 9:00-17:00 PST
-                            </p>
-                            </div>
-                          </div>
                           <div className="info info-horizontal">
-                            <div className="icon icon-info">
+                            <div className="icon icon-danger">
                               <i
-                                className="nc-icon nc-pin-3"
+                                className="nc-icon nc-badge"
                                 aria-hidden="true" />
                             </div>
                             <div className="description">
                               <h4 className="info-title">
-                                Our Office
+                                Drop Us a Line
                               </h4>
-                              <p> Mission Consultants<br />1547 Mission St<br />San Francisco, CA 94143</p>
-                            </div>
-
+                              <p> +1 415-868-5262<br />
+                              Mon - Fri, 9:00-17:00 PST
+                            </p>
                           </div>
+                        </div>
+                        <div className="info info-horizontal">
+                          <div className="icon icon-info">
+                            <i
+                              className="nc-icon nc-pin-3"
+                              aria-hidden="true" />
+                          </div>
+                          <div className="description">
+                            <h4 className="info-title">
+                              Our Office
+                            </h4>
+                            <p> Mission Consultants<br />1547 Mission St<br />San Francisco, CA 94143</p>
+                          </div>
+
                         </div>
                       </div>
                     </div>
+
+
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-      )
-    }
+    )
   }
+}
 
-  export default ContactUs
+export default ContactUs
