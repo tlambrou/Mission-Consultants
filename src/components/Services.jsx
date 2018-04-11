@@ -164,7 +164,7 @@ export class Services extends Component {
             <p></p>
 
             <div className="card-footer">
-              <a href="#pablo" className="btn btn-link btn-neutral">
+              <a href="#contact-us" className="btn btn-link btn-neutral">
                 <i className="fa fa-book" aria-hidden="true"></i> Show more
                 </a>
               </div>
@@ -192,7 +192,7 @@ export class Services extends Component {
             </dl>
             <p></p>
             <div className="card-footer">
-              <a href="#pablo" className="btn btn-link btn-neutral">
+              <a href="#contact-us" className="btn btn-link btn-neutral">
                 <i className="fa fa-book" aria-hidden="true"></i> Show more
                 </a>
               </div>
@@ -220,7 +220,7 @@ export class Services extends Component {
             </dl>
             <p></p>
             <div className="card-footer">
-              <a href="#pablo" className="btn btn-link btn-neutral">
+              <a href="#contact-us" className="btn btn-link btn-neutral">
                 <i className="fa fa-book" aria-hidden="true"></i> Show more
                 </a>
               </div>
@@ -248,7 +248,7 @@ export class Services extends Component {
             </dl>
             <p></p>
             <div className="card-footer">
-              <a href="#pablo" className="btn btn-link btn-neutral">
+              <a href="#contact-us" className="btn btn-link btn-neutral">
                 <i className="fa fa-book" aria-hidden="true"></i> Show more
                 </a>
               </div>
