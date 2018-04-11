@@ -130,7 +130,7 @@ export class Services extends Component {
                 </dl>
               </p>
               <div className="card-footer">
-                <a href="#pablo" className="btn btn-neutral btn-round">Explore Rates</a>
+                <a href="#contact-us" className="btn btn-neutral btn-round">Explore Rates</a>
               </div>
             </div>
           </div>
