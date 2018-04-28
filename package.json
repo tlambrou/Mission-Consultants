@@ -1,5 +1,6 @@
 {
   "name": "mission-consultants",
+  "homepage": "https://www.missionconsultants.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

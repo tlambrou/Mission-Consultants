@@ -15,10 +15,8 @@ export class Search extends Component {
         "Tony-Cioara",
         "chris-mauldin",
         "Joe",
-        "shane-austrie",
         "Ansel-Bridgewater",
         "fernando-arocho",
-        "michael_loubier",
         "Sky-Xu",
         "TJ-King"
       ],
